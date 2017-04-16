@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Order.css">
+</head>
+<body>
+<div id="title">
+    <a href=""><img src="image/logo_e.png"/></a>
+</div>
+<div id="step">
+    <span id="s1">填写订单<br/><span id="s2"> FILL IN THE ORDER FORM</span></span>
+    <ul>
+        <li><span id="step1"></span>查看购物车</li>
+        <li>------------></li>
+        <li><span id="step2"></span>填写订单</li>
+        <li>------------></li>
+        <li><span></span>付款，完成购买</li>
+    </ul>
+</div>
+<div id="message">
+    <div id="top"><span id="sp1">收货信息</span></div>
+    <div id="bottom">
+        <a  onmousedown="show()" id="cli"><span id="sp2">+</span><br/><span id="sp3">增加收货地址</span></a>
+        <a   id="clii">
+            <div id="dv1"><span id="spn1">**</span><span id="spn2">17600000000</span></div>
+            <span id="spn3">湖南省衡阳市珠晖区酃湖乡</span><br/>
+            <span id="spn4">湖南工**</span><br/>
+            <span id="a1" onclick="show2()">修改</span><span id="a2" onclick="show3()">删除</span>
+        </a>
+    </div>
+</div>
+<div id="main">
+    <div class="pay-top"><span>支付方式</span></div>
+    <div id="pay-down">
+        <span class="sty"><a href="" class="style">在线支付（推荐）</a></span>
+        <span class="sty1">支持主流银行卡、微信、支付宝、银联等平台付款，方便快捷</span>
+    </div>
+    <div class="pay-top "><span>配送方式</span></div>
+    <div id="dispatching-down"><span class="sty"><a href="" class="style">普通快递：运费¥0</a></span></div>
+    <div class="pay-top "><span>送货时间</span></div>
+    <div id="dilivery=down">
+        <span class="sty"><a href="" class="style">送货时间不限</a></span>
+        <span class="sty1">温馨提示：快递公司会尽力按您选择的送货时间配送，如遇特殊情况（天气、环境等）无法按您要求的时间配送，请您谅解！</span>
+    </div>
+</div>
+<div id="content">
+    <div id="d1"><span>订单商品信息</span><a href="">返回购物车修改></a></div>
+    <div id="d2">
+        <ul>
+            <li class="l1">商品信息</li>
+            <li class="l2">颜色/尺码</li>
+            <li class="l3">单价</li>
+            <li class="l4">数量</li>
+        </ul>
+    </div>
+    <div id="d3">
+        <ul>
+            <li class="l5"><img src="image/sell-box.jpg"/><br/><span>DC 低帮潮复古帆布滑板鞋</span></li>
+            <li class="l6">颜色：黑色 尺码：37码</li>
+            <li class="l7">¥338</li>
+            <li class="l8">×1</li>
+        </ul>
+    </div>
+    <div id="d4"><span> 商品总价：¥338</span><br/><span>运费：¥0 </span></div>
+    <div id="d5"><span>寄送至：湖南省 衡阳市 珠晖区 酃湖乡    湖南工**</span><br/>
+                  <span>收货人：**   176****1000</span></div>
+</div>
+<span id="span1">应付金额：</span>
+<span id="span2">¥338</span>
+<a href="" id="money">去付款</a>
+<div id="mydiv2">
+    <div id="dv">
+        <span id="add">新增地址</span>
+        <a href="" id="del" onmousedown="hidden()">×</a>
+    </div>
+    <span id="add1">新增地址、电话为选填项，其他均为必填项</span><br/>
+    <span class="ts">*</span><span class="zi">收货人：</span>      <input type="text"/><br/>
+    <span class="ts">*</span><span class="zi">所在区域:</span>
+    <select>
+        <option>省</option>
+        <option>湖南省</option>
+        <option>浙江省</option>
+        <option>陕西省</option>
+        <option>河北省</option>
+    </select>
+    <select>
+        <option>市</option>
+        <option>衡阳市</option>
+        <option>长沙市</option>
+        <option>岳阳市</option>
+        <option>株洲市</option>
+    </select>
+    <select>
+        <option>区</option>
+        <option>珠晖区</option>
+        <option>雁峰区</option>
+        <option>石鼓区</option>
+        <option>蒸湘区</option>
+    </select><br/>
+    <span class="ts">*</span><span class="zi">详细地址：</span><input type="text"/><br/>
+    <span class="ts">*</span><span class="zi">手机号码：</span><input type="text"/><br/>
+    <input type="radio" id="inp"/><span id="span">设置为默认收货地址</span><br/>
+    <a id="baocun" onclick="show1()">保存</a> <a href="" id="quxiao">取消</a>
+</div>
+
+<script type="text/javascript" src="Order.js"></script>
+</body>
+</html>
