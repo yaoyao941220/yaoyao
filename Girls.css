@@ -1,0 +1,278 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.big_top{
+    width: 100%;
+    height: 240px;
+}
+
+.big_bottom{
+    width: 100%;
+    height: 600px;
+}
+
+#changeImg{
+    width: 1151px;
+    height: 530px;
+    position: relative;
+}
+#Pic{
+    margin-left:100px;
+    position: relative;
+}
+#changeImg a{
+    display: inline-block;
+    font-size: 60px;
+    color: #8F808F;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 50px;
+    width: 30px;
+}
+#left-a{
+    position: absolute;
+    top:200px;
+    left: 100px;
+    padding-left: 20px;
+}
+#right-a{
+    position: absolute;
+    top:200px;
+    right: -100px;
+    padding-right:20px;
+}
+#changeImg ul{
+    position: absolute;
+    top:400px;
+    left: 650px;
+    background: #8B908F;;
+    border-radius: 20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#changeImg ul li{
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    list-style: none;
+    border-radius: 50%;
+    margin: 5px;
+}
+#changeImg ul li a{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.scroll_number_over{
+    background-color: white;
+}
+.scroll_number_out{
+    opacity: 0.6;
+}
+#select {
+    width:300px;
+    height:34px;
+    border: 1px solid #000000;
+    text-align: center;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+ #s1{
+    line-height: 34px;
+    font:"Adobe 黑体 Std R";
+    font-size: 20px;
+    color:#000000;
+    font-weight: bold;
+}
+ #s2{
+     font:"Adobe 黑体 Std R";
+     font-size: 20px;
+     color:#000000;
+ }
+ #showImg{
+     width:1151px;
+     height: 558px;
+     background-color: #8AE6E0;
+     margin: auto;
+     position: relative;
+ }
+ #showImg ul{
+     margin-top: 45px;
+     margin-left: 40px;
+     position: absolute;
+     top:40px;
+ }
+ #showImg li{
+     float:left;
+     width:320px;
+     height: 430px;
+     list-style: none;
+     margin-right: 10px;
+
+ }
+ #showImg a{
+     color:#FFFFFF;
+     text-decoration: none;
+     font-weight:bolder;
+     font-size: 30px;
+     float: left;
+     display: inline-block;
+     font: "微软雅黑 Light";
+ }
+ #a1{
+     position: absolute;
+     top:300px;
+     left: 25px;
+ }
+ #a2{
+     position: absolute;
+     top:300px;
+     right: 40px;
+ }
+ #showBrand{
+     width:1151px;
+     height: 180px;
+     margin-top: 5px;
+     margin-left: 61px;
+ }
+ #brand{
+     float:left;
+     width: 800px;
+ }
+ #brand ul li{
+    float: left;
+    list-style: none;
+     margin-right: 50px;
+     margin-bottom: 10px;
+}
+ #changePage{
+     float:left;
+     width: 186px;
+     margin-top: 20px;
+     margin-left: 0px;
+ }
+ #page a{
+     color:#000000;
+     font-size: 50px;
+     text-decoration: none;
+ }
+ #page{
+     width:200px;
+     height: 100px;
+ }
+
+ #more{
+     margin-top: 0px;
+     margin-left: 250px;
+ }
+ #more a{
+     color:#62635E;
+     font-size: 30px;
+     text-decoration: none;
+ }
+ #fashion{
+     width:300px;
+     height:34px;
+     border: 1px solid #000000;
+     text-align: center;
+     margin: auto;
+     margin-top: 80px;
+     margin-bottom: 40px;
+ }
+ #fashion span{
+     line-height: 34px;
+     font:"Adobe 黑体 Std R";
+     font-size: 20px;
+     color:#000000;
+     font-weight: bold;
+ }
+ #display{
+     height: 500px;
+     width: 1151px;
+     margin: auto;
+ }
+ #left{
+     width: 200px;
+     height: 500px;
+     margin-top: 50px;
+     float: left;
+ }
+ #left a{
+     color:#FFFFFF;
+     font-size: 30px;
+     text-decoration: none;
+     display: inline-block;
+     line-height: 90px;
+ }
+ #top{
+     width:200px;
+     height:90px;
+     background:pink;
+     margin-bottom: 15px;
+     text-align: center;
+ }
+#down{
+    width:200px;
+    height:90px;
+    background:#82D5D9;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#bottom{
+    background:#F8F8F8;
+    width:200px;
+    height: 287px;
+}
+#bottom li{
+    width: 80px;
+    list-style: none;
+    float: left;
+    height: 50px;
+    margin-top: 15px;
+}
+#bottom li a{
+    color: #000000;
+    font-size: 20px;
+}
+#center{
+    height: 500px;
+    width: 370px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+#center a{
+    height: 500px;
+    width: 370px;
+}
+#center a:hover{
+    opacity: 0.9;
+}
+#right{
+    float: left;
+    margin-left: 35px;
+    height: 550px;
+    width: 500px;
+}
+#right li{
+    list-style: none;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+#right a{
+    width: 220px;
+    height: 250px;
+    text-decoration: none;
+    float: left;
+}
+#a3{
+    margin-left: 10px;
+}
+#a4{
+    margin-left: 10px;
+}

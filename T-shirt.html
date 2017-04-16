@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>商品详情页面</title>
+<link rel="stylesheet" href="T-shirt.css" />
+<script type="text/javascript" src="T-shirt.js" ></script>
+</head>
+<body  onload="bigimg()">
+<div class="big_top">
+    <iframe src="iframe_head.html" width="100%" height="100%" frameborder="0"></iframe>
+</div>
+<div class="head">
+	<a class="head-left" href="#">
+    	<img src="image/head1.jpg" />
+    </a>
+    <a class="head-right" title="主页">
+       <img style="width:20px;height:20px;padding-bottom:12px;" src="image/home2.png"/>
+    </a>
+     <a class="head-right1" title="关注人数">
+       	<img src="image/like.png" style="width:20px;height:20px;padding-bottom:12px;" />
+        <span style="float:right;margin-top:-16px;margin-right:5px;">18358</span>
+    </a>
+</div>
+
+<div class="center-content">
+<p class="path-nav">
+    <a href="#" title="YOHO!有货">GIRLS首页</a>
+    <img src="image/go.png" style="weight:12px; height:12px;"/>
+    <a href="#" title="上衣">上衣</a>
+   <img src="image/go.png" style="weight:12px; height:12px;"/>
+    <a href="#" title="T恤" style="padding-bottom:10px;">T恤</a>
+    <img src="image/go.png" style="weight:12px; height:12px;"/>
+    <span class="path-last" >TEEBACCO 冲浪风景英文印花短袖T恤</span>
+</p>
+
+<div class="pull-left">
+	<div class="content-main-image">
+    	<div id="minImg">  
+        	<img src="image/大图1.jpg" id="bigImg"/>
+            <div class="magnifier" id="magnifier"></div>
+            <div class="bigImg" id="bimg">
+            	<!--<img src="image/超大1.jpg" id="b_bimg"  />-->
+                <div id="b_bimg" class="bigImgCss"></div>
+            </div>
+        </div>
+        
+        <div class="share-row">
+        	<span class="price-row-title pull-left"	>分享：</span>
+            <span class="share-wrapper">
+                <i class="weibo" data-type="weibo" title="分享到新浪微博"></i>
+                <i class="weixin" data-type="weixin" title="分享到微信朋友圈"></i>
+                <i class="tweibo" data-type="tweibo" title="分享到腾讯微博"></i>
+                <i class="qzone" data-type="qzone" title="分享到QQ空间"></i>
+                <i class="qq" data-type="qq" title="分享到QQ好友"></i>
+                <i class="renren" data-type="renren" title="分享到人人"></i>
+                <i class="douban" data-type="douban" title="分享到豆瓣"></i>
+			</span>
+        </div>
+    </div>
+    <div class="pull-right thumbs">
+    	<div>
+        	<img src="image/小图1.jpg" class="thumb active" onMouseOver="changeImg1()" id="smallImg1" />
+            <img src="image/小图2.jpg" class="thumb" onMouseOver="changeImg2()" id="smallImg2" />
+            <img src="image/小图3.jpg" class="thumb" onMouseOver="changeImg3()" id="smallImg3" />
+        </div>
+    </div>
+</div>
+<div class="content-main-info">
+	<h1 class="content-main-info-name">TEEBACCO 冲浪风景英文印花短袖T恤</h1>
+    <div class="content-main-info-line"></div>
+    <p class="market-price">
+        <span class="price-row">
+            <span class="price-row-title">吊牌价：</span>
+            <span class="price-row-other-price">¥139.00</span>
+        </span>
+        <br>
+        <span>
+            <span class="price-row-title">促销价：</span>
+            <span class="promotion-price">¥39.00</span>
+        </span>
+        <span class="promotion-desc">
+        	<span class="promotion">2.8折</span>
+        </span>
+	</p>
+    <div class="clearfix" style="width:100%;margin-top:10px;position:relative;margin-bottom:10px;">
+    	<span class="price-row-title" style="float:left;">促&nbsp;&nbsp;销： </span>
+    
+        	<ul class="activity">
+            	<li>
+                	<span class="ac-type" style="float:left;">折扣</span>
+					<span class="ac-des" style="float:left;"><a target="_blank" href=#">【初夏新品 早鸟价贩售ING】下单立享8.8折</a></span>
+                </li>
+                <li class="promotion-item ">
+					<span class="ac-type" style="float:left;margin-top:10px;margin-left:30px;">加价购</span>
+					<span class="ac-des" style="float:left;margin-top:10px;"><a target="_blank" href="#">&nbsp;&nbsp;加¥49购休闲帽</a></span>
+				</li>
+            </ul>
+    </div>
+    <div class="content-main-info-line"></div>
+    
+    <div class="chose-color clearfix">
+      	<span class="price-row-title pull-left" style="margin-top:6px;">颜&nbsp;&nbsp;色：</span>
+    	<ul class="pull-left">
+        	<li class="pull-left" id="colorB" onclick="changeB()" style="border-color:#000;" title="TEEBACCO 冲浪风景英文印花短袖T...">
+				<img src="image/type1.jpg"/>
+				<span class="color-name">黑色</span>
+			</li>
+            <li class="pull-left" id="colorH" onclick="changeH()" title="TEEBACCO 冲浪风景英文印花短袖T...">
+				<img src="image/type2.jpg"/>
+				<span class="color-name">灰色</span>
+			</li>
+            <li class="pull-left" id="colorW" onclick="changeW()" title="TEEBACCO 冲浪风景英文印花短袖T...">
+				<img src="image/type3.jpg"/>
+				<span class="color-name">白色</span>
+			</li>
+        </ul>
+    </div>
+    
+    <div class="chose-size">
+    	<span class="price-row-title" style="float:left;margin-top:20px;"> 尺&nbsp;&nbsp;码：</span>
+        <ul class="size">
+            <li class="size-focuse" id="sizeS" onclick="changeSizeS()"> S</li>
+            <li id="sizeM" onclick="changeSizeM()"> M</li>
+            <li id="sizeL" onclick="changeSizeL()"> L</li>
+            <li id="sizeXL" onclick="changeSizeXL()"> XL</li>
+		</ul>
+        <div id="sizeInfo" style="display:block;color:#666;float:left;width:100%;margin-left:70px;margin-top:-5px;margin-bottom:10px;">腰围98CM</div>
+    </div>
+    
+    
+     <div class="chose-count">
+    	<span class="price-row-title" style="float:left;margin-top:10px;"> 数&nbsp;&nbsp;量：</span>
+        <span class="minus-plus" style="color:#b0b0b0" id="minusNum" onclick="minusNum()">－</span>
+        <span id="num" class="num">1</span>
+         <span class="minus-plus" onclick="addNum()">＋</span>
+    </div>
+    
+    <div class="content-main-info-line"></div>
+    
+    <span id="add-to-cart" class="add-to-cart">
+		<img src="image/cart.png" style="margin-top:8px;margin-right:10px;margin-left:15px;float:left;"/>
+		<a  style="float:left;">加入购物车</a>
+	</span>
+    
+    <span id="add-to-cart" class="collect-product">
+		<img src="image/focuse.png" style="margin-top:8px;margin-right:10px;margin-left:15px;float:left;"/>
+		<a  style="float:left;">收藏商品</a>
+	</span>
+    <span id="add-to-cart" style="width:150px;" class="collect-product">
+		<img src="image/erweima.png" style="margin-top:8px;margin-right:10px;margin-left:15px;float:left;"/>
+		<a  style="float:left;">扫一扫购买</a>
+	</span>
+</div>
+
+
+<!--商品介绍-->
+<div class="total-content">
+	<div class="other-infos">
+    	<div class="goodsMessage">
+        	<p class="block-title">
+                <span class="title-head">
+                	<span class="title-cur">商品信息</span>
+				</span>
+			</p>
+            <div class="description-content">
+            <ul class="basic">
+            	<li>
+                    <em class="justpostion">
+                        <span class="keySpace">编　　号: </span>
+                        <span class="value-space">51208291</span>
+                 	</em>
+                 </li>
+                 <li>
+                    <em class="justpostion" style="margin-left: 56px;">
+                        <span class="keySpace">颜　　色: </span>
+                        <span id="desc-color" class="value-space" title="黑色">黑色</span>
+                    </em>
+                 </li>
+                 <li>
+                    <em class="justpostion" style="margin-left: 56px;">
+                        <span class="keySpace">性　　别: </span>
+                        <span class="value-space">通用</span>
+                    </em>
+                  </li>
+                  <li>
+                    <em class="justpostion" style="display: inline-block; margin-left: 70px;">
+                        <span class="keySpace">领　　型: </span>
+                        <span class="value-space">圆领</span>
+                    </em>
+                  </li>
+                  <li>
+                    <em class="justpostion">
+                    <span class="keySpace">衣　　长: </span>
+                    <span class="value-space">适中</span>
+                    </em>
+                    </li>
+                    <li>
+                    <em class="justpostion" style="margin-left: 56px;">
+                    <span class="keySpace">袖　　长: </span>
+                    <span class="value-space">短袖</span>
+                    </em>
+                    </li>
+                    <li>
+                    <em class="justpostion" style="margin-left: 56px;">
+                    <span class="keySpace">版　　型: </span>
+                    <span class="value-space">正常</span>
+                    </em>
+                    </li>
+                    <li>
+                    <em class="justpostion" style="display: inline-block; margin-left: 70px;">
+                    <span class="keySpace">厚　　度: </span>
+                    <span class="value-space">薄</span>
+                    </em>
+                    </li>
+                    <li>
+                    <em class="justpostion">
+                    <span class="keySpace">经典款型: </span>
+                    <span class="value-space">图案T恤</span>
+                    </em>
+                    </li>
+                    <li>
+                    <em class="justpostion" style="margin-left: 56px;">
+                    <span class="keySpace">袖　　型: </span>
+                    <span class="value-space">正常</span>
+                    </em>
+                    </li>
+                    <li>
+                    <em class="justpostion" style="margin-left: 56px;">
+                    <span class="keySpace">肩　　型: </span>
+                    <span class="value-space">落肩</span>
+                    </em>
+                    </li>
+             </ul>
+             <ul class="comfort">
+             	<li class="pull-left">
+                    <span class="comfort-title">弹　性：</span>
+                    <span class="min-des">小</span>
+                    <span class="comfort-block cur"></span>
+                    <span class="comfort-block "></span>
+                    <span class="comfort-block "></span>
+                    <span class="comfort-block "></span>
+                    <span class="comfort-block "></span>
+                    <span class="max-des">大</span>
+                </li>
+                <li class="pull-left">
+                    <span class="comfort-title">厚　度：</span>
+                    <span class="min-des">薄</span>
+                    <span class="comfort-block cur"></span>
+                    <span class="comfort-block "></span>
+                    <span class="comfort-block "></span>
+                    <span class="comfort-block "></span>
+                    <span class="comfort-block "></span>
+                    <span class="max-des">厚</span>
+                </li>
+                <li class="pull-left">
+                    <span class="comfort-title">柔软度：</span>
+                    <span class="min-des">软</span>
+                    <span class="comfort-block cur"></span>
+                    <span class="comfort-block "></span>
+                    <span class="comfort-block "></span>
+                    <span class="comfort-block "></span>
+                    <span class="comfort-block "></span>
+                    <span class="max-des">硬</span>
+                </li>
+                <li class="pull-left">
+                    <span class="comfort-title">透气性：</span>
+                    <span class="min-des">弱</span>
+                    <span class="comfort-block cur"></span>
+                    <span class="comfort-block "></span>
+                    <span class="comfort-block "></span>
+                    <span class="comfort-block "></span>
+                    <span class="comfort-block "></span>
+                    <span class="max-des">强</span>
+                </li>
+             </ul>
+            </div>
+        </div>
+        <div class="sizeMessage">
+        	<p  class="block-title">
+                <span class="title-head">
+                	<span class="title-cur">尺码信息</span>
+				</span>
+			</p>
+            <div style="text-align:center;">
+            	<table class="size-table">
+                    <thead>
+                        <tr>
+                            <th>吊牌尺码</th>
+                            <th>肩宽</th>
+                            <th>胸围</th>
+                            <th>袖长</th>
+                            <th>前衣长</th>
+                            <th>后衣长</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>S</td>
+                            <td>43</td>
+                            <td>98</td>
+                            <td>20</td>
+                            <td>69</td>
+                            <td>69</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(249, 249, 249);">M</td>
+                            <td style="background-color: rgb(249, 249, 249);">44</td>
+                            <td style="background-color: rgb(249, 249, 249);">102</td>
+                            <td style="background-color: rgb(249, 249, 249);">20</td>
+                            <td style="background-color: rgb(249, 249, 249);">67</td>
+                            <td style="background-color: rgb(249, 249, 249);">67</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>45</td>
+                            <td>106</td>
+                            <td>21</td>
+                            <td>72</td>
+                            <td>72</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(249, 249, 249);">XL</td>
+                            <td style="background-color: rgb(249, 249, 249);">46</td>
+                            <td style="background-color: rgb(249, 249, 249);">110</td>
+                            <td style="background-color: rgb(249, 249, 249);">22</td>
+                            <td style="background-color: rgb(249, 249, 249);">74</td>
+                            <td style="background-color: rgb(249, 249, 249);">74</td>
+                        </tr>
+                    </tbody>
+				</table>
+                <p class="size-tip">
+                    ※ 以上尺寸为实物人工测量，因测量方式不同会有1-2CM误差，相关数据仅作参考，以收到实物为准。 单位：CM
+                    <br>
+                    ※ 参考尺码因衣服版型、剪裁不同会有误差，仅供参考
+                </p>
+                <img class="size-img" src="image/0001.jpg">
+            </div>
+        </div>
+        <div class="goodsInside">
+        	<p  class="block-title">
+                <span class="title-head">
+                	<span class="title-cur">商品详情</span>
+				</span>
+			</p>
+            <div class="details-html">
+            	<p>
+                	<img class="img-responsive" src="image/jing.jpg" style="display: block;"  border="0" width="720">
+                </p>
+                <p>
+                	<img class="img-responsive" src="image/2.jpg" style="display: block;"  border="0" width="720">
+                </p>
+                 <p>
+                	<img class="img-responsive" src="image/001.jpg" style="display: block;"  border="0" width="720">
+                </p>
+                 <p>
+                	<img class="img-responsive" src="image/002.jpg" style="display: block;"  border="0" width="720">
+                </p>
+                
+                 <p>
+                	<img class="img-responsive" src="image/004.jpg" style="display: block;"  border="0" width="720">
+                </p>
+                 <p>
+                	<img class="img-responsive" src="image/005.jpg" style="display: block;"  border="0" width="720">
+                </p>
+                 <p>
+                	<img class="img-responsive" src="image/006.jpg" style="display: block;"  border="0" width="720">
+                </p>
+                 <p>
+                	<img class="img-responsive" src="image/007.jpg" style="display: block;"  border="0" width="720">
+                </p>
+                 <p>
+                	<img class="img-responsive" src="image/008.jpg" style="display: block;"  border="0" width="720">
+                </p>
+                 <p>
+                	<img class="img-responsive" src="image/009.jpg" style="display: block;"  border="0" width="720">
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</div>
+<div class="big_bottom">
+    <iframe src="iframe_footer2.html" width="100%" height="100%" frameborder="0"></iframe>
+</div>
+</body>
+</html>
